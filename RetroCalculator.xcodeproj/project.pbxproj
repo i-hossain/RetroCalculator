@@ -14,7 +14,26 @@
 		EC252ED51E9E1DA400FF9F9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC252ED31E9E1DA400FF9F9C /* LaunchScreen.storyboard */; };
 		EC252EDF1E9E76D700FF9F9C /* Minecraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC252EDE1E9E76D700FF9F9C /* Minecraft.ttf */; };
 		EC252EE11E9E78B500FF9F9C /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = EC252EE01E9E78B500FF9F9C /* btn.wav */; };
+		ECA720021EA033AF00958C1B /* RetroCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA720011EA033AF00958C1B /* RetroCalculatorTests.swift */; };
+		ECA720101EA033E500958C1B /* RetroCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA7200F1EA033E500958C1B /* RetroCalculatorUITests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ECA720041EA033AF00958C1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC252EBF1E9E1DA400FF9F9C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC252EC61E9E1DA400FF9F9C;
+			remoteInfo = RetroCalculator;
+		};
+		ECA720121EA033E500958C1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC252EBF1E9E1DA400FF9F9C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC252EC61E9E1DA400FF9F9C;
+			remoteInfo = RetroCalculator;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		EC252EC71E9E1DA400FF9F9C /* RetroCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetroCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,10 +45,30 @@
 		EC252ED61E9E1DA400FF9F9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC252EDE1E9E76D700FF9F9C /* Minecraft.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minecraft.ttf; sourceTree = "<group>"; };
 		EC252EE01E9E78B500FF9F9C /* btn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = btn.wav; sourceTree = "<group>"; };
+		ECA71FFF1EA033AF00958C1B /* RetroCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RetroCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECA720011EA033AF00958C1B /* RetroCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetroCalculatorTests.swift; sourceTree = "<group>"; };
+		ECA720031EA033AF00958C1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECA7200D1EA033E500958C1B /* RetroCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RetroCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECA7200F1EA033E500958C1B /* RetroCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetroCalculatorUITests.swift; sourceTree = "<group>"; };
+		ECA720111EA033E500958C1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		EC252EC41E9E1DA400FF9F9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECA71FFC1EA033AF00958C1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECA7200A1EA033E500958C1B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,6 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				EC252EC91E9E1DA400FF9F9C /* RetroCalculator */,
+				ECA720001EA033AF00958C1B /* RetroCalculatorTests */,
+				ECA7200E1EA033E500958C1B /* RetroCalculatorUITests */,
 				EC252EC81E9E1DA400FF9F9C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +92,8 @@
 			isa = PBXGroup;
 			children = (
 				EC252EC71E9E1DA400FF9F9C /* RetroCalculator.app */,
+				ECA71FFF1EA033AF00958C1B /* RetroCalculatorTests.xctest */,
+				ECA7200D1EA033E500958C1B /* RetroCalculatorUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,6 +111,24 @@
 				EC252ED61E9E1DA400FF9F9C /* Info.plist */,
 			);
 			path = RetroCalculator;
+			sourceTree = "<group>";
+		};
+		ECA720001EA033AF00958C1B /* RetroCalculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				ECA720011EA033AF00958C1B /* RetroCalculatorTests.swift */,
+				ECA720031EA033AF00958C1B /* Info.plist */,
+			);
+			path = RetroCalculatorTests;
+			sourceTree = "<group>";
+		};
+		ECA7200E1EA033E500958C1B /* RetroCalculatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ECA7200F1EA033E500958C1B /* RetroCalculatorUITests.swift */,
+				ECA720111EA033E500958C1B /* Info.plist */,
+			);
+			path = RetroCalculatorUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,6 +151,42 @@
 			productReference = EC252EC71E9E1DA400FF9F9C /* RetroCalculator.app */;
 			productType = "com.apple.product-type.application";
 		};
+		ECA71FFE1EA033AF00958C1B /* RetroCalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECA720081EA033AF00958C1B /* Build configuration list for PBXNativeTarget "RetroCalculatorTests" */;
+			buildPhases = (
+				ECA71FFB1EA033AF00958C1B /* Sources */,
+				ECA71FFC1EA033AF00958C1B /* Frameworks */,
+				ECA71FFD1EA033AF00958C1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECA720051EA033AF00958C1B /* PBXTargetDependency */,
+			);
+			name = RetroCalculatorTests;
+			productName = RetroCalculatorTests;
+			productReference = ECA71FFF1EA033AF00958C1B /* RetroCalculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ECA7200C1EA033E500958C1B /* RetroCalculatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECA720141EA033E500958C1B /* Build configuration list for PBXNativeTarget "RetroCalculatorUITests" */;
+			buildPhases = (
+				ECA720091EA033E500958C1B /* Sources */,
+				ECA7200A1EA033E500958C1B /* Frameworks */,
+				ECA7200B1EA033E500958C1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECA720131EA033E500958C1B /* PBXTargetDependency */,
+			);
+			name = RetroCalculatorUITests;
+			productName = RetroCalculatorUITests;
+			productReference = ECA7200D1EA033E500958C1B /* RetroCalculatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -104,6 +201,18 @@
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = Y3C6BG2S4Y;
 						ProvisioningStyle = Automatic;
+					};
+					ECA71FFE1EA033AF00958C1B = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = Y3C6BG2S4Y;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EC252EC61E9E1DA400FF9F9C;
+					};
+					ECA7200C1EA033E500958C1B = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = Y3C6BG2S4Y;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EC252EC61E9E1DA400FF9F9C;
 					};
 				};
 			};
@@ -121,6 +230,8 @@
 			projectRoot = "";
 			targets = (
 				EC252EC61E9E1DA400FF9F9C /* RetroCalculator */,
+				ECA71FFE1EA033AF00958C1B /* RetroCalculatorTests */,
+				ECA7200C1EA033E500958C1B /* RetroCalculatorUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -138,6 +249,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ECA71FFD1EA033AF00958C1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECA7200B1EA033E500958C1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -150,7 +275,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ECA71FFB1EA033AF00958C1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECA720021EA033AF00958C1B /* RetroCalculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECA720091EA033E500958C1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECA720101EA033E500958C1B /* RetroCalculatorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ECA720051EA033AF00958C1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC252EC61E9E1DA400FF9F9C /* RetroCalculator */;
+			targetProxy = ECA720041EA033AF00958C1B /* PBXContainerItemProxy */;
+		};
+		ECA720131EA033E500958C1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC252EC61E9E1DA400FF9F9C /* RetroCalculator */;
+			targetProxy = ECA720121EA033E500958C1B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		EC252ECE1E9E1DA400FF9F9C /* Main.storyboard */ = {
@@ -291,6 +445,60 @@
 			};
 			name = Release;
 		};
+		ECA720061EA033AF00958C1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = Y3C6BG2S4Y;
+				INFOPLIST_FILE = RetroCalculatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ihossain.RetroCalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RetroCalculator.app/RetroCalculator";
+			};
+			name = Debug;
+		};
+		ECA720071EA033AF00958C1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = Y3C6BG2S4Y;
+				INFOPLIST_FILE = RetroCalculatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ihossain.RetroCalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RetroCalculator.app/RetroCalculator";
+			};
+			name = Release;
+		};
+		ECA720151EA033E500958C1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = Y3C6BG2S4Y;
+				INFOPLIST_FILE = RetroCalculatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ihossain.RetroCalculatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = RetroCalculator;
+			};
+			name = Debug;
+		};
+		ECA720161EA033E500958C1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = Y3C6BG2S4Y;
+				INFOPLIST_FILE = RetroCalculatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ihossain.RetroCalculatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = RetroCalculator;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -308,6 +516,23 @@
 			buildConfigurations = (
 				EC252EDA1E9E1DA400FF9F9C /* Debug */,
 				EC252EDB1E9E1DA400FF9F9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECA720081EA033AF00958C1B /* Build configuration list for PBXNativeTarget "RetroCalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECA720061EA033AF00958C1B /* Debug */,
+				ECA720071EA033AF00958C1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ECA720141EA033E500958C1B /* Build configuration list for PBXNativeTarget "RetroCalculatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECA720151EA033E500958C1B /* Debug */,
+				ECA720161EA033E500958C1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

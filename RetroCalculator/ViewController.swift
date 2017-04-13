@@ -55,27 +55,27 @@ class ViewController: UIViewController {
     }
     
     @IBAction func dividePressed(sender: UIButton) {
-        processOperation(operation: .Divide)
+        processOperation(operation: .Divide, equalPressed: false)
         
     }
     
     @IBAction func multiplyPressed(sender: UIButton) {
-        processOperation(operation: .Multiply)
+        processOperation(operation: .Multiply, equalPressed: false)
         
     }
     
     @IBAction func addPressed(sender: UIButton) {
-        processOperation(operation: .Add)
+        processOperation(operation: .Add, equalPressed: false)
         
     }
     
     @IBAction func subtractPressed(sender: UIButton) {
-        processOperation(operation: .Subtract)
+        processOperation(operation: .Subtract, equalPressed: false)
         
     }
     
     @IBAction func equalPressed(sender: UIButton) {
-        processOperation(operation: currentOperation)
+        processOperation(operation: currentOperation, equalPressed: true)
         
     }
     
@@ -86,7 +86,7 @@ class ViewController: UIViewController {
         btnSound.play()
     }
     
-    func processOperation(operation: Operation) {
+    func processOperation(operation: Operation, equalPressed: Bool) {
 //        playSound()
         if currentOperation != Operation.Empty {
             //User selected an operator but then selected another operator without first entering a number
@@ -107,16 +107,19 @@ class ViewController: UIViewController {
                 leftValStr = result
                 outputLbl.text = leftValStr
             }
-            
-            currentOperation = operation
+            if equalPressed {
+                currentOperation = Operation.Empty
+            } else {
+                currentOperation = operation
+            }
         } else {
             //This is the first time an operator has been pressed
             leftValStr = runningNumber
             runningNumber = ""
             currentOperation = operation
         }
+        
     }
-
 
 }
 
