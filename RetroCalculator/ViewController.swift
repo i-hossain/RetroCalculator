@@ -48,7 +48,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func numberPressed(sender: UIButton) {
-        //playSound()
+        playSound()
         
         runningNumber += "\(sender.tag)"
         outputLbl.text = runningNumber
@@ -97,7 +97,7 @@ class ViewController: UIViewController {
     }
     
     func processOperation(operation: Operation) {
-//        playSound()
+        playSound()
         if currentOperation != Operation.Empty {
             
             // Current operation is not empty so if left hand string does not have a value, assign 0
