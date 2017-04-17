@@ -55,27 +55,27 @@ class ViewController: UIViewController {
     }
     
     @IBAction func dividePressed(sender: UIButton) {
-        processOperation(operation: .Divide, equalPressed: false)
+        processOperation(operation: .Divide)
         
     }
     
     @IBAction func multiplyPressed(sender: UIButton) {
-        processOperation(operation: .Multiply, equalPressed: false)
+        processOperation(operation: .Multiply)
         
     }
     
     @IBAction func addPressed(sender: UIButton) {
-        processOperation(operation: .Add, equalPressed: false)
+        processOperation(operation: .Add)
         
     }
     
     @IBAction func subtractPressed(sender: UIButton) {
-        processOperation(operation: .Subtract, equalPressed: false)
+        processOperation(operation: .Subtract)
         
     }
     
     @IBAction func equalPressed(sender: UIButton) {
-        processOperation(operation: currentOperation, equalPressed: true)
+        processOperation(operation: currentOperation)
         
     }
     
@@ -96,7 +96,7 @@ class ViewController: UIViewController {
         btnSound.play()
     }
     
-    func processOperation(operation: Operation, equalPressed: Bool) {
+    func processOperation(operation: Operation) {
 //        playSound()
         if currentOperation != Operation.Empty {
             
@@ -123,13 +123,8 @@ class ViewController: UIViewController {
                 leftValStr = result
                 outputLbl.text = leftValStr
             }
-            
-            // Check if the operation was performed using the equal sign or some other operator and handle appropriately
-            if equalPressed {
-                currentOperation = Operation.Empty
-            } else {
                 currentOperation = operation
-            }
+            
         } else {
             // This is the first time an operator has been pressed
             leftValStr = runningNumber
