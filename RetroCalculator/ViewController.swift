@@ -99,7 +99,13 @@ class ViewController: UIViewController {
     func processOperation(operation: Operation, equalPressed: Bool) {
 //        playSound()
         if currentOperation != Operation.Empty {
-            //User selected an operator but then selected another operator without first entering a number
+            
+            // Current operation is not empty so if left hand string does not have a value, assign 0
+            if leftValStr == "" {
+                leftValStr = "0"
+            }
+            
+            // If running operation is not empty and running number is not empty, then a right hand value has been entered; assign it to right hand string
             if runningNumber != "" {
                 rightValStr = runningNumber
                 runningNumber = ""
@@ -117,13 +123,15 @@ class ViewController: UIViewController {
                 leftValStr = result
                 outputLbl.text = leftValStr
             }
+            
+            // Check if the operation was performed using the equal sign or some other operator and handle appropriately
             if equalPressed {
                 currentOperation = Operation.Empty
             } else {
                 currentOperation = operation
             }
         } else {
-            //This is the first time an operator has been pressed
+            // This is the first time an operator has been pressed
             leftValStr = runningNumber
             runningNumber = ""
             currentOperation = operation
